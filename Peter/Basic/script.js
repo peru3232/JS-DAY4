@@ -30,11 +30,20 @@ const profInputfields = document.getElementById('profession');
 const prof = document.querySelectorAll('input[type=radio]')
 
 function bgChange () {
-    for (let i = 0; i < prof.length; i++) {
+    for (var i = 0; i < prof.length; i++) {
         if (prof[i].checked) {break}
     }
-    
+    switch(i){
+        default:
+            i = 'purple';
+            break;
+        case 1:
+            i = 'yellow';
+            break;
+        case 2:
+            i = 'gray';   
+    }
+    output.style.background = i;
 }
-
 
 profInputfields.addEventListener('change', bgChange)
