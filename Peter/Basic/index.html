@@ -7,15 +7,25 @@
     <title>JS DAY-4 Basic</title>
 </head>
 <body>
-    <fieldset id="inputfields">
-        <label for="fn" class="">First Name</label><br>
-        <input type="text" name="firstName" id="fn"><br><br>
-        <label for="ln" class="">Last Name</label><br>
-        <input type="text" name="lastName" id="ln"><br><br>
-        <label for="age" class="">Age</label><br>
-        <input type="text" name="age" id="age"><br><br>
+    <fieldset>
+        <form id="inputfields">
+            <label for="fn" class="">First Name</label><br>
+            <input type="text" name="firstName" id="fn"><br><br>
+            <label for="ln" class="">Last Name</label><br>
+            <input type="text" name="lastName" id="ln"><br><br>
+            <label for="age" class="">Age</label><br>
+            <input type="text" name="age" id="age"><br><br>
+        </form>
+        <!-- for Basic 2 -->
         <label for="profession" class="">Profession</label><br>
-
+        <form id="profession">
+            <input type="radio" id="IT" name="profession" value="IT">
+            <label for="IT">IT</label><br>
+            <input type="radio" id="Teacher" name="profession" value="Teacher">
+            <label for="Teacher">Teacher</label><br>
+            <input type="radio" id="Hospitality" name="profession" value="Hospitality">
+            <label for="Hospitality">Hospitality</label>
+        </form>
     </fieldset>
     <div id="combinated"></div>
 
